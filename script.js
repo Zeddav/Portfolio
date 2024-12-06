@@ -1,5 +1,13 @@
-// Exemple de script JS pour ajouter des animations ou autres fonctionnalités à l'avenir
-// Exemple : afficher un message de bienvenue lors du chargement de la page
-window.onload = function() {
-    alert('Bienvenue sur mon portfolio!');
+// Ouvrir la pop-up avec l'image agrandie
+function openModal(imageSrc) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+}
+
+// Fermer la pop-up
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
 }

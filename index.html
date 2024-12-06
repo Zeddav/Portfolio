@@ -28,7 +28,7 @@
         <div class="hero">
             <img src="photo.png" alt="Photo de Zélie" class="hero-photo">
             <h1>Zélie Davaud</h1>
-            <p>Développeuse passionnée, toujours à la recherche de solutions innovantes et créatives.</p>
+            <p>Développeuse en alternance passionnée, toujours à la recherche de solutions innovantes et créatives.</p>
             <p>Explorez mes projets et compétences.</p>
             <br>
             <a href="#about" class="btn">En savoir plus</a>
@@ -46,6 +46,13 @@
             Cette expérience m’a permis d’approfondir mes compétences techniques tout en développant une compréhension plus précise des enjeux du développement logiciel dans un contexte professionnel. </p><br>
             <p>Je suis constamment en quête de nouveaux défis et je souhaite continuer à progresser dans le domaine du développement pour devenir un professionnel polyvalent et capable de concevoir des solutions innovantes et adaptées aux besoins des utilisateurs.</p>
         </div>
+        <br><br>
+        <div style="text-align: center;">
+            <a href="Zélie davaud_CV.zip" id="downloadCV" class="btn-download" download>
+                <i class="fas fa-download"></i> Télécharger mon CV
+            </a>
+        </div>
+        
     </section>
 
     <section id="skills">
@@ -109,17 +116,19 @@
     <!-- Portfolio -->
     <section id="portfolio">
         <div class="container">
-            <h2>Mes Projets</h2>
+            <h2>Mes Projets</h2><br>
             <div class="projects"> 
                 <div class="project">
                     <h3>Crochet'Time</h3>
+                    <h5>2024</h5>
+                    <img src="crochetTime.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('crochetTime.png')">
                     <p>
                         Ce projet consiste en la création d’un site web dédié à la vente de doudous en crochet faits main, mettant en valeur l’artisanat et la personnalisation des produits. 
                         <span class="dots">...</span>
                         <span class="more-text">
                             Développé en PHP, HTML et JavaScript, ce site a pour but de proposer une expérience utilisateur fluide et conviviale tout en offrant une gestion efficace du contenu pour l’administrateur.
-                            On peut donc y retrouver un catalogue interactif, un système de panier et de commandes ainsi que tout un back office administrateur afin de faciliter l’utilisation pour le vendeur. 
-                            Le site est entièrement responsive et s’adapte parfaitement aux différentes tailles d’écrans, assurant une accessibilité optimale.
+                            <br>On peut donc y retrouver un catalogue interactif, un système de panier et de commandes ainsi que tout un back office administrateur afin de faciliter l’utilisation pour le vendeur. 
+                            <br>Le site est entièrement responsive et s’adapte parfaitement aux différentes tailles d’écrans, assurant une accessibilité optimale.
                         </span>
                     </p>
                     <button class="read-more-btn">Lire plus</button>
@@ -137,7 +146,25 @@
     
                 <div class="project">
                     <h3>Lecteur de diaporama</h3>
-                    <p>Une application de gestion de tâches utilisant Vue.js et Firebase pour un stockage en temps réel.</p>
+                    <h5>2024</h5>
+                    <img src="crochetTime.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('crochetTime.png')">
+                    <p>
+                        Ce projet est une application de lecteur de diapositives dotée d’une interface utilisateur intuitive. <br>Elle est structurée selon le modèle MVP 
+                        <span class="dots">...</span>
+                        <span class="more-text">
+                            (Modèle-Vue-Présentateur) pour une séparation claire des responsabilités, facilitant la maintenance et l’évolution du code.<br>Ce lecteur permet de manipuler des diaporamas provenant d’une base de données, ce qui rend possible une mise à jour facile du contenu sans modification directe de l’application. Les utilisateurs peuvent changer de diapositive ou passer en lecture automatique pour les voir défiler à une vitesse configurable. 
+                            <br>Il existe 7 versions, chacune apportant des fonctionnalités supplémentaires ou des optimisations. L’utilisation de Git a permis une gestion rigoureuse de ces versions.
+                            
+                        </span>
+                    </p>
+                    <button class="read-more-btn">Lire plus</button>
+                    <br>
+                    <p>
+                        <strong>Technologies utilisées :</strong><br>
+                        <strong>Language :</strong> C++ pour sa performance, sa flexibilité et sa capacité à gérer des applications complexes.<br>
+                        <strong>API :</strong> Qt pour une gestion facile des interfaces graphiques et des événements.<br>
+                        <strong>Base de données :</strong> MySQL pour stocker les informations des diaporamas et diapositive.
+                    </p>
                     <a href="https://github.com/Zeddav/S2.01-Lecteur-de-Diapositives-Qt" target="_blank">
                         <i class="fab fa-github"></i> Voir sur GitHub
                     </a>
@@ -145,11 +172,36 @@
     
                 <div class="project">
                     <h3>Puissance 4</h3>
-                    <p>React</p>
+                    <h5>2024</h5>
+                    <img src="crochetTime.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('crochetTime.png')">
+                    <p>
+                        Ce projet consiste en la création d’un jeu de Puissance 4 interactif développé en React. Il s'agit d'une application web ludique conçue dans le cadre de
+                        <span class="dots">...</span>
+                        <span class="more-text">
+                             mon apprentissage du framework.<br>Le jeu permet à deux joueurs de s’affronter sur une grille classique du jeu. L’objectif est d’aligner quatre jetons de la même couleur horizontalement, verticalement ou en diagonale avant son adversaire.
+                            <br>Les fonctionnalités incluent la gestion des tours, une vérification des alignements gagnants, une possibilité de recommencer une partie sans recharger la page ainsi qu’un minuteur de quelques secondes par tour.<br>Ce projet m’a permis de mieux comprendre les concepts fondamentaux de React, comme la gestion des états et des props, tout en renforçant mes compétences en développement d’interfaces utilisateurs modernes et interactives.
+                        </span>
+                    </p>
+                    <button class="read-more-btn">Lire plus</button>
+                    <br>
+                    <p>
+                        <strong>Technologies utilisées :</strong><br>
+                        <strong>Frontend :</strong> React pour la logique et la structure, CSS pour le style.<br>
+                        <strong>Langage :</strong> TypeScript pour un typage fort et une meilleure maintenabilité.<br>
+                        <strong>Outils :</strong> Node.js et npm pour la gestion du projet et des dépendances.<br>
+                    </p>
+                    <a href="https://github.com/Zeddav/Connect-4-React" target="_blank">
+                        <i class="fab fa-github"></i> Voir sur GitHub
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
     
 
     <!-- Contact -->
@@ -169,26 +221,51 @@
     <footer>
         <p>&copy; 2024 Zélie Davaud. Tous droits réservés.</p>
     </footer>
+    
 
 </body>
 </html>
-
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const readMoreBtn = document.querySelector(".read-more-btn");
-        const moreText = document.querySelector(".more-text");
-        const dots = document.querySelector(".dots");
 
-        readMoreBtn.addEventListener("click", function() {
-            if (moreText.style.display === "inline") {
-                moreText.style.display = "none";
-                dots.style.display = "inline";
-                readMoreBtn.textContent = "Lire plus";
-            } else {
-                moreText.style.display = "inline";
-                dots.style.display = "none";
-                readMoreBtn.textContent = "Lire moins";
-            }
+    // Ouvrir la pop-up avec l'image agrandie
+function openModal(imageSrc) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+}
+
+// Fermer la pop-up
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    var modalContent = document.getElementsByClassName("modal-content")[0];
+    
+    if (event.target == modal) {  // Vérifie si l'utilisateur clique en dehors de l'image
+        modal.style.display = "none";  // Cacher la pop-up
+    }
+}
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll(".read-more-btn"); // Sélectionne tous les boutons "Lire plus"
+        readMoreBtns.forEach((btn) => {
+            btn.addEventListener("click", function() {
+                const parent = btn.parentElement; // Récupère l'élément parent du bouton
+                const moreText = parent.querySelector(".more-text"); // Texte à afficher
+                const dots = parent.querySelector(".dots"); // "..."
+
+                if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    dots.style.display = "inline";
+                    btn.textContent = "Lire plus";
+                } else {
+                    moreText.style.display = "inline";
+                    dots.style.display = "none";
+                    btn.textContent = "Lire moins";
+                }
+            });
         });
     });
 </script>
