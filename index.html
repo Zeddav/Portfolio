@@ -26,6 +26,7 @@
     <!-- Accueil -->
     <section id="home">
         <div class="hero">
+            <img src="photo.png" alt="Photo de Zélie" class="hero-photo">
             <h1>Zélie Davaud</h1>
             <p>Développeuse passionnée, toujours à la recherche de solutions innovantes et créatives.</p>
             <p>Explorez mes projets et compétences.</p>
@@ -37,12 +38,12 @@
     <!-- À propos -->
     <section id="about">
         <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Je m'appelle Zélie Davaud et je suis actuellement en deuxième année de BUT Informatique, en alternance. Cette formule me permet de combiner mes études avec une expérience professionnelle enrichissante, où je peux appliquer mes connaissances théoriques dans des projets réels et améliorer mes compétences au contact de professionnels du secteur.</p>
+            <h2>À propos de moi</h2><br>
+            <p>Je m'appelle Zélie Davaud et je suis actuellement en deuxième année de BUT Informatique, en alternance. Cette formule me permet de combiner mes études avec une expérience professionnelle enrichissante, où je peux appliquer mes connaissances théoriques dans des projets réels et améliorer mes compétences au contact de professionnels du secteur.</p><br>
             <p>Passionnée par l'informatique et la programmation, j'ai acquis des compétences solides en développement web, gestion de bases de données, ainsi qu'en programmation orientée objet. </p>
-            <p>J'ai eu l'occasion de travailler avec des technologies comme HTML, CSS, JavaScript, React, PHP, et Python, ce qui m'a permis de renforcer mes connaissances et d'apprendre à développer des solutions efficaces et performantes.</p>
-            <p>En alternance, j'ai aussi appris à collaborer en équipe, à respecter des délais serrés et à résoudre des problèmes concrets dans des environnements de travail dynamiques. </p>
-            <p>Cette expérience m’a permis d’approfondir mes compétences techniques tout en développant une compréhension plus précise des enjeux du développement logiciel dans un contexte professionnel.</p> 
+            <p>J'ai eu l'occasion de travailler avec des technologies comme HTML, CSS, JavaScript, React, PHP, et Python, ce qui m'a permis de renforcer mes connaissances et d'apprendre à développer des solutions efficaces et performantes.</p><br>
+            <p>En alternance, j'ai aussi appris à collaborer en équipe, à respecter des délais serrés et à résoudre des problèmes concrets dans des environnements de travail dynamiques.
+            Cette expérience m’a permis d’approfondir mes compétences techniques tout en développant une compréhension plus précise des enjeux du développement logiciel dans un contexte professionnel. </p><br>
             <p>Je suis constamment en quête de nouveaux défis et je souhaite continuer à progresser dans le domaine du développement pour devenir un professionnel polyvalent et capable de concevoir des solutions innovantes et adaptées aux besoins des utilisateurs.</p>
         </div>
     </section>
@@ -109,30 +110,31 @@
     <section id="portfolio">
         <div class="container">
             <h2>Mes Projets</h2>
-            <div class="project">
-                <h3>Crochet'Time</h3>
-                <p>
-                    Ce projet consiste en la création d’un site web dédié à la vente de doudous en crochet faits main, mettant en valeur l’artisanat et la personnalisation des produits. 
-                    <span class="dots">...</span>
-                    <span class="more-text">
-                        Développé en PHP, HTML et JavaScript, ce site a pour but de proposer une expérience utilisateur fluide et conviviale tout en offrant une gestion efficace du contenu pour l’administrateur.
-                        On peut donc y retrouver un catalogue interactif, un système de panier et de commandes ainsi que tout un back office administrateur afin de faciliter l’utilisation pour le vendeur. 
-                        Le site est entièrement responsive et s’adapte parfaitement aux différentes tailles d’écrans, assurant une accessibilité optimale.
-                    </span>
-                </p>
-                <button class="read-more-btn">Lire plus</button>
-                <br>
-                <p>
-                    <strong>Technologies utilisées :</strong><br>
-                    <strong>Frontend :</strong> HTML et CSS pour la structure et le design, JavaScript pour les interactions dynamiques.<br>
-                    <strong>Backend :</strong> PHP pour la gestion des données et des fonctionnalités du site.<br>
-                    <strong>Base de données :</strong> MySQL pour stocker les informations des produits, des commandes et des utilisateurs.
-                </p>
-                <a href="https://github.com/Zeddav/CrochetTime" target="_blank">
-                    <i class="fab fa-github"></i> Voir sur GitHub
-                </a>
-            </div>
-                       
+            <div class="projects"> 
+                <div class="project">
+                    <h3>Crochet'Time</h3>
+                    <p>
+                        Ce projet consiste en la création d’un site web dédié à la vente de doudous en crochet faits main, mettant en valeur l’artisanat et la personnalisation des produits. 
+                        <span class="dots">...</span>
+                        <span class="more-text">
+                            Développé en PHP, HTML et JavaScript, ce site a pour but de proposer une expérience utilisateur fluide et conviviale tout en offrant une gestion efficace du contenu pour l’administrateur.
+                            On peut donc y retrouver un catalogue interactif, un système de panier et de commandes ainsi que tout un back office administrateur afin de faciliter l’utilisation pour le vendeur. 
+                            Le site est entièrement responsive et s’adapte parfaitement aux différentes tailles d’écrans, assurant une accessibilité optimale.
+                        </span>
+                    </p>
+                    <button class="read-more-btn">Lire plus</button>
+                    <br>
+                    <p>
+                        <strong>Technologies utilisées :</strong><br>
+                        <strong>Frontend :</strong> HTML et CSS pour la structure et le design, JavaScript pour les interactions dynamiques.<br>
+                        <strong>Backend :</strong> PHP pour la gestion des données et des fonctionnalités du site.<br>
+                        <strong>Base de données :</strong> MySQL pour stocker les informations des produits, des commandes et des utilisateurs.
+                    </p>
+                    <a href="https://github.com/Zeddav/CrochetTime" target="_blank">
+                        <i class="fab fa-github"></i> Voir sur GitHub
+                    </a>
+                </div>
+    
                 <div class="project">
                     <h3>Lecteur de diaporama</h3>
                     <p>Une application de gestion de tâches utilisant Vue.js et Firebase pour un stockage en temps réel.</p>
@@ -140,6 +142,7 @@
                         <i class="fab fa-github"></i> Voir sur GitHub
                     </a>
                 </div>
+    
                 <div class="project">
                     <h3>Puissance 4</h3>
                     <p>React</p>

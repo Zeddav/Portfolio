@@ -71,6 +71,10 @@ nav ul li a:hover {
     text-align: center;
     background: linear-gradient(135deg, #3498db, #9b59b6);  /* Dégradé du bleu clair au violet clair */
 }
+.hero-photo {
+    border-radius: 50%; /* Donne un effet rond si nécessaire */
+    margin-bottom: 20px; /* Espace entre l'image et le texte */
+}
 
 #home .hero h1 {
     font-size: 3.5rem;
@@ -200,29 +204,48 @@ h2 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
-
-/* Portfolio */
 #portfolio .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 #portfolio .project {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;  
 }
+
 #portfolio .project:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .project h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #3498db;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #2c3e50;
+}
+
 
 /* Contact */
 form input, form textarea {
@@ -234,6 +257,8 @@ form input, form textarea {
     font-size: 1rem;
     font-family: Arial, sans-serif;
 }
+
+
 form button {
     background-color: #3498db;
     color: white;
