@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio d'un développeur informatique">
     <title>Portfolio Zélie Davaud</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -26,7 +26,10 @@
     <!-- Accueil -->
     <section id="home">
         <div class="hero">
-            <img src="photo.png" alt="Photo de Zélie" class="hero-photo">
+            <div class="photo-container"> 
+                <img src="photo.jpg" alt="Photo de Zélie" class="photo">
+            </div>
+           
             <h1>Zélie Davaud</h1>
             <p>Développeuse en alternance passionnée, toujours à la recherche de solutions innovantes et créatives.</p>
             <p>Explorez mes projets et compétences.</p>
@@ -48,7 +51,7 @@
         </div>
         <br><br>
         <div style="text-align: center;">
-            <a href="Zélie davaud_CV.zip" id="downloadCV" class="btn-download" download>
+            <a href="Zelie_Davaud_CV.pdf" class="btn-download" >
                 <i class="fas fa-download"></i> Télécharger mon CV
             </a>
         </div>
@@ -147,7 +150,7 @@
                 <div class="project">
                     <h3>Lecteur de diaporama</h3>
                     <h5>2024</h5>
-                    <img src="crochetTime.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('crochetTime.png')">
+                    <img src="lecteurDiapo.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('lecteurDiapo.png')">
                     <p>
                         Ce projet est une application de lecteur de diapositives dotée d’une interface utilisateur intuitive. <br>Elle est structurée selon le modèle MVP 
                         <span class="dots">...</span>
@@ -173,7 +176,7 @@
                 <div class="project">
                     <h3>Puissance 4</h3>
                     <h5>2024</h5>
-                    <img src="crochetTime.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('crochetTime.png')">
+                    <img src="react4.png" alt="Capture Crochet'Time" class="thumbnail" onclick="openModal('react4.png')">
                     <p>
                         Ce projet consiste en la création d’un jeu de Puissance 4 interactif développé en React. Il s'agit d'une application web ludique conçue dans le cadre de
                         <span class="dots">...</span>
@@ -248,24 +251,68 @@ window.onclick = function(event) {
         modal.style.display = "none";  // Cacher la pop-up
     }
 }
-    document.addEventListener("DOMContentLoaded", function() {
-        const readMoreBtns = document.querySelectorAll(".read-more-btn"); // Sélectionne tous les boutons "Lire plus"
-        readMoreBtns.forEach((btn) => {
-            btn.addEventListener("click", function() {
-                const parent = btn.parentElement; // Récupère l'élément parent du bouton
-                const moreText = parent.querySelector(".more-text"); // Texte à afficher
-                const dots = parent.querySelector(".dots"); // "..."
+document.addEventListener("DOMContentLoaded", function () {
+    const projects = document.querySelectorAll(".project");
+    const readMoreBtns = document.querySelectorAll(".read-more-btn");
 
-                if (moreText.style.display === "inline") {
+    // Fonction pour ajuster la hauteur des cartes en fonction de la plus grande
+    function adjustHeights() {
+        let maxHeight = 0;
+
+        // Réinitialiser les hauteurs pour éviter des accumulations
+        projects.forEach((project) => {
+            project.style.height = "auto";
+        });
+
+        // Trouver la hauteur maximale
+        projects.forEach((project) => {
+            const height = project.offsetHeight;
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        // Appliquer la hauteur maximale à toutes les cartes
+        projects.forEach((project) => {
+            project.style.height = maxHeight + "px";
+        });
+    }
+
+    // Gestion du bouton "Lire plus"
+    readMoreBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const isExpanded = btn.textContent === "Lire moins";
+
+            // Basculer l'état de tous les projets
+            projects.forEach((project) => {
+                const moreText = project.querySelector(".more-text");
+                const dots = project.querySelector(".dots");
+                const projectBtn = project.querySelector(".read-more-btn");
+
+                if (isExpanded) {
+                    // Replier le texte pour tous
                     moreText.style.display = "none";
                     dots.style.display = "inline";
-                    btn.textContent = "Lire plus";
+                    projectBtn.textContent = "Lire plus";
                 } else {
+                    // Déplier le texte pour tous
                     moreText.style.display = "inline";
                     dots.style.display = "none";
-                    btn.textContent = "Lire moins";
+                    projectBtn.textContent = "Lire moins";
                 }
             });
+
+            // Ré-ajuster les hauteurs après un clic
+            adjustHeights();
         });
     });
+
+    // Ajuster les hauteurs au chargement de la page
+    adjustHeights();
+
+    // Ré-ajuster les hauteurs si la taille de la fenêtre change
+    window.addEventListener("resize", adjustHeights);
+});
+
+
 </script>
