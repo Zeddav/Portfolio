@@ -1,10 +1,8 @@
-function App() {
-  return (
-    <div>
-      <h1>Mon Portfolio 👨‍💻</h1>
-      <p>Bienvenue sur mon site !</p>
-    </div>
-  );
-}
+import React from "react";
+import LoadingScreen from "./LoadingScreen/LoadingScreen";
+
+const App: React.FC = () => {
+  return <LoadingScreen />;
+};
 
 export default App;

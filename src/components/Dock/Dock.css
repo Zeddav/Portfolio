@@ -1,0 +1,30 @@
+.dock {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(50, 50, 50, 0.8);
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: flex;
+  gap: 15px;
+}
+.dock-logo {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+}
+.dock-button {
+  color: white;
+  background: none;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dock-button:hover {
+  transform: scale(1.1);
+}
