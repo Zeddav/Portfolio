@@ -1,8 +1,8 @@
 import React from "react";
-import LoadingScreen from "./LoadingScreen/LoadingScreen";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 const App: React.FC = () => {
-  return <LoadingScreen />;
+  return <Portfolio />; 
 };
 
 export default App;
