@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import HeaderButton from "./HeaderButton";
-import DarkToggle from "../DarkToggle/DarkToggle";
 
 const Header: React.FC = () => {
   return (
